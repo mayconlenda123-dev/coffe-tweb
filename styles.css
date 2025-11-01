@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     padding: 0;
@@ -203,6 +204,7 @@ h1 {
     height: 310px;
     background-color:#F3F2F2;
     border-radius: 15px;
+    z-index: 0;
 }
 
 h2 {
@@ -231,9 +233,7 @@ h2 {
 
 .footer {
     background-image: url(imgs/background.png);
-    margin-top:20px;
-    height: 438px;
-
+    background-size: cover;
 }
 
 .footer strong {
@@ -242,14 +242,14 @@ h2 {
 
 .footer-top {
     width: 273px;
-    margin-top: 40px;
     margin-left: 144px;
+    margin-top: 40px;
 }
 
 .footer-top h3 {
     font-size: 24px;
     width: 120px;
-    height: 38px;;
+    height: 38px;
 }
 
 .footer-top p {
@@ -281,26 +281,102 @@ h2 {
 }
 
 .tipos {
+    text-transform: uppercase;
+    font-size: 10px;
+    font-family: 'Roboto',sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.tipos p{
     color: #00955A;
     background-color:#E5F9EF;
-    border-radius: 10px;
-    width: 62px;
-    height: 21px;
-    text-transform: uppercase;
-    font-family: 'Roboto',sans-serif;
-    font-size: 10px;
     font-weight: 700;
+    border-radius: 10px;
+    width: 81px;
+    height: 21px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.item button {
+.shop{
     background-color:#8047F8;
     border: transparent;
     border-radius: 6px;
     width: 38px;
-    width: 38px;
-    
+    height: 38px;
+    cursor: pointer;
+}
+.shop img {
+    width: 20px;
+    height: 20px;
 }
 
+button:hover{
+    transform: translateY(-4px);
+    transition: 0.4s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3)
+}
+
+
+.item:hover{
+    transform: translateY(-3px);
+    transition: 0.4s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.buy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.buy p{
+    font-size: 14px;
+}
+
+.buy span{
+    color: #332A1A;
+    font-size: 30px;
+    font-weight: 700;
+    width: 67px;
+    height: 31px;
+}
+
+.coffe-img{
+    z-index: 1;
+    margin-top: -20px;
+    margin-left: 68px;
+}
+
+.item h3{
+    display: flex;
+    justify-content: center;
+}
+
+.subtitle {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    color: #8D8686;
+    width: 180px;
+    margin-left: 45px;
+    margin-bottom: 33px;
+}
+
+.title {
+    margin-top: 80px;
+    margin-left: 160px;
+    margin-bottom: 54px;
+}
+
+input {
+    width: 72px;
+    height: 38px;
+    background-color: #E6e5e5;
+    border: none;
+    text-align: center;
+    border: 15px;
+}
